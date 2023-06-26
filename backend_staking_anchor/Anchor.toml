@@ -1,0 +1,15 @@
+[features]
+seeds = true
+skip-lint = false
+[programs.localnet]
+backend_staking_anchor = "BRkou4CPQ7mm3ebS9RsEk1A6kKgFdbrrTASzfUqe5RNd"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/home/home/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
